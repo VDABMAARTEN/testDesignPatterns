@@ -1,23 +1,25 @@
-package be.vdab;
+package IGNOREME;
 
-public class Zoogdier implements Observer {
+import be.vdab.Observer;
+
+public class Vogel implements Observer {
 
     private String naam;
 
-    Zoogdier(String naam){
+    Vogel(String naam){
         this.naam = naam;
     }
 
     @Override
     public void reageerOpVulkaanuitbarsting() {
-        System.out.println(naam + " kruipt in zijn hol.");
+        System.out.println(naam + " gaat hoger vliegen.");
     }
 
     public String getNaam() {
         return naam;
     }
 
-    private void setNaam(String naam) {
+    private void setVoornaam(String naam) {
         this.naam = naam;
     }
 }
